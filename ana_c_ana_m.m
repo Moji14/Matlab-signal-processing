@@ -39,24 +39,33 @@ FM= Ac * cos(2*pi*(Fcarrier*t+F_delta*cumtrapz(t,modulator)));                  
 %FM = fmmod(modulator,Fcarrier, Fs, F_delta);                                    % Matlab function
 
 %Time domain plots
-subplot(3,2,1); plot(t, AM); title('AM modulation');
-subplot(3,2,3); plot(t, PM); title('PM modulation');
-subplot(3,2,5); plot(t, FM); title('FM modulation');xlabel('time (s)');
+subplot(4,2,1); plot(t,horzcat(carrier(1:L/2),modulator(1:L/2))); title('Carrier & Modulator');
+subplot(4,2,3); plot(t, AM); title('AM modulation');
+subplot(4,2,5); plot(t, PM); title('PM modulation');
+subplot(4,2,7); plot(t, FM); title('FM modulation');xlabel('time (s)');
 
 %Frequency domain
 freq_vector=Fs/L*[0:L/2-1];
 
 %Magnitude of Fourier transform
+abs_carrier=abs(fft(carrier)/L);
+abs_modulator=abs(fft(modulator)/L);
 abs_AM=abs(fft(AM)/L);
 abs_PM=abs(fft(PM)/L);
 abs_FM=abs(fft(FM)/L);
 
 %Positives frequencies discrimination
+carrier_spectrum=abs_carrier(1:L/2);
+modulator_spectrum=abs_modulator(1:L/2);
 AM_spectrum=abs_AM(1:L/2); 
 PM_spectrum=abs_PM(1:L/2); 
 FM_spectrum=abs_FM(1:L/2);
 
-%Freq domain plotting   
-subplot(3,2,2); plot(freq_vector,AM_spectrum); title('AM modulation');
-subplot(3,2,4); plot(freq_vector,PM_spectrum); title('PM modulation');
-subplot(3,2,6); plot(freq_vector,FM_spectrum); title('FM modulation');xlabel('Frequency (Hz)');
+%Freq domain plotting
+subplot(4,2,2); plot(freq_vector,carrier_spectrum); title('Carrier & Modulator');
+hold on
+subplot(4,2,2); plot(freq_vector,modulator_spectrum);
+hold off
+subplot(4,2,4); plot(freq_vector,AM_spectrum); title('AM modulation');
+subplot(4,2,6); plot(freq_vector,PM_spectrum); title('PM modulation');
+subplot(4,2,8); plot(freq_vector,FM_spectrum); title('FM modulation');xlabel('Frequency (Hz)');
