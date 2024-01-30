@@ -5,4 +5,5 @@ Matlab scripts for signal processing.
 
 ana_c_ana_m.m plots carrier, modulator, AM, PM and FM signals in time and frequency domains.   
 n_ask.m plots an N-level encoded modulator and the corresponding ASK in time and frequency domains.   
+n_fsk.m plots an N-level encoded modulator and the corresponding FSK in time and freq. domains.   
 
