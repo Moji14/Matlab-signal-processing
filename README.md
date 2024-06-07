@@ -10,3 +10,4 @@ sampling_test.m: Compares how signal length affects the result of the FFT accura
 mag_pahse_test.m: Compares different methods to calculate and plot the magnitude and phase of a given signal.   
 n_psk.m: Generates a PSK modulation and plots the modulator and the modulated signal in time as well as in the frequency domain.   
 vector_gen_test.m: This file is a Matlab script that compares 2 different ways to generate a vector.   
+IQmod_demod.m: This file is a Matlab script that generates IQ modulation and demodulates back to the orginal signal.   
