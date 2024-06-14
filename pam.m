@@ -23,7 +23,11 @@ Fmodulator = 2; Am = 1; modulator = Am * sin(2*pi*Fmodulator*t);                
 
 % Pulse train (periodic square wave offested and normalized to 1, used as a
 % pulse train.
-ptrain=0.5.*(1+square(2*pi*30*t,25));
+dutycycle=25;
+ptrain=0.5.*(1+square(2*pi*30*t,dutycycle));
+
+% Alternative pulse train generation method
+%y=pulstran(t,[0:20*Ts:5;sin(2*pi*2.*[0:20*Ts:5])]','rectpuls',5*Ts);
 
 % PAM modulation
 PAM = modulator .* ptrain;
