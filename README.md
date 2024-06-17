@@ -11,5 +11,5 @@ mag_pahse_test.m: Compares different methods to calculate and plot the magnitude
 n_psk.m: Generates a PSK modulation and plots the modulator and the modulated signal in time as well as in the frequency domain.   
 vector_gen_test.m: This file is a Matlab script that compares 2 different ways to generate a vector.   
 IQmod_demod.m: This file is a Matlab script that generates IQ modulation and demodulates back to the orginal signal.   
-pam.m: This file is a Matlab script that generates a PAM modulation.
+pam.m: This file is a Matlab script that generates a PAM modulation.   
 pwm.m: PWM (Pulse width modulation) signal generation Matlab script.   
