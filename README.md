@@ -13,3 +13,4 @@ vector_gen_test.m: This file is a Matlab script that compares 2 different ways t
 IQmod_demod.m: This file is a Matlab script that generates IQ modulation and demodulates back to the orginal signal.   
 pam.m: This file is a Matlab script that generates a PAM modulation.   
 pwm.m: PWM (Pulse width modulation) signal generation Matlab script.   
+delta_pwm.m: Delta PWM modulation.
