@@ -1,6 +1,6 @@
-% This file is a Matlab script generates a carrier, modulator, PM, FM
-% signals and plots them in time domain as well as frequency domain. It is
-% a good basic introduction ecercise  for signal processing. 
+% This file is a Matlab script that generates a carrier, modulator, AM, PM, FM
+% signals and plots them in time and frequency domains. It is
+% a good basic introduction exercise  for signal processing. 
 %
 % This program is free software; you can redistribute it and/or modify
 % it under the terms of the GNU General Public License as published by
