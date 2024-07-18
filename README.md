@@ -15,3 +15,4 @@ pam.m: This file is a Matlab script that generates a PAM modulation.
 pwm.m: PWM (Pulse width modulation) signal generation Matlab script.   
 delta_pwm.m: Delta PWM modulation.   
 delta_sigma_pwm.m: Delta-Sigma PWM modulation.
+pfm.m: Pulse Frequency Modulation (Integral Pulse Frequency Modulator).   
