@@ -16,3 +16,4 @@ pwm.m: PWM (Pulse width modulation) signal generation Matlab script.
 delta_pwm.m: Delta PWM modulation.   
 delta_sigma_pwm.m: Delta-Sigma PWM modulation.
 pfm.m: Pulse Frequency Modulation (Integral Pulse Frequency Modulator).   
+complex_chirp.m: Generates a complex chrip IQ modulates it and IQ demodulate and filters it to baseband again.   
